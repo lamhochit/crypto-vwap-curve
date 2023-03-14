@@ -25,14 +25,14 @@ cum_curve_df = generate_curves(hist_df)
 ## Analysis
 Intuitively, without open and close auctions, it is unlikely that a volume smile will be formed in crypto markets. However, it is worth noting that the first bin (UTC 0) stands out. Initial guess for the behavior is that similar to TradFi markets, there is often a fixing for portfolios and people often choose 00:00 as the rebalance time, which leads to a spike in volume.
 
-<img width="500" src='https://github.com/lamhochit/crypto-vwap-curve/blob/main/img/btc_spot_bin.png' alt="BTC Spot Bin Curve"> <img width="500" src='https://github.com/lamhochit/crypto-vwap-curve/blob/main/img/btc_spot_cum.png' alt="BTC Spot Cum Curve">
+<img width="300" src='https://github.com/lamhochit/crypto-vwap-curve/blob/main/img/btc_spot_bin.png' alt="BTC Spot Bin Curve"> <img width="300" src='https://github.com/lamhochit/crypto-vwap-curve/blob/main/img/btc_spot_cum.png' alt="BTC Spot Cum Curve">
 
-<img width="500" src='https://github.com/lamhochit/crypto-vwap-curve/blob/main/img/eth_spot_bin.png' alt="ETH Spot Bin Curve"> <img width="500" src='https://github.com/lamhochit/crypto-vwap-curve/blob/main/img/eth_spot_cum.png' alt="ETH Spot Cum Curve">
+<img width="300" src='https://github.com/lamhochit/crypto-vwap-curve/blob/main/img/eth_spot_bin.png' alt="ETH Spot Bin Curve"> <img width="300" src='https://github.com/lamhochit/crypto-vwap-curve/blob/main/img/eth_spot_cum.png' alt="ETH Spot Cum Curve">
 
 A similar pattern is also observed for Perps.
 
-<img width="500" src='https://github.com/lamhochit/crypto-vwap-curve/blob/main/img/btc_fut_bin.png' alt="BTC Futures Bin Curve"> <img width="500" src='https://github.com/lamhochit/crypto-vwap-curve/blob/main/img/btc_fut_cum.png' alt="BTC Futures Cum Curve">
+<img width="300" src='https://github.com/lamhochit/crypto-vwap-curve/blob/main/img/btc_fut_bin.png' alt="BTC Futures Bin Curve"> <img width="300" src='https://github.com/lamhochit/crypto-vwap-curve/blob/main/img/btc_fut_cum.png' alt="BTC Futures Cum Curve">
 
-<img width="500" src='https://github.com/lamhochit/crypto-vwap-curve/blob/main/img/eth_fut_bin.png' alt="ETH Futures Bin Curve"> <img width="500" src='https://github.com/lamhochit/crypto-vwap-curve/blob/main/img/eth_fut_cum.png' alt="ETH Futures Cum Curve">
+<img width="300" src='https://github.com/lamhochit/crypto-vwap-curve/blob/main/img/eth_fut_bin.png' alt="ETH Futures Bin Curve"> <img width="300" src='https://github.com/lamhochit/crypto-vwap-curve/blob/main/img/eth_fut_cum.png' alt="ETH Futures Cum Curve">
 
 However, the volume profile seems to exhibit weak seasonality in 8 hour intervals. Which is likely to be related to the settlement mechanism of perpetual futures (funding rates are paid out every 8 hours).
